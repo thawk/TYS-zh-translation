@@ -7,7 +7,7 @@
 
 函数f(x)在区间[a,b]上的定积分可以看作是f(x)曲线下方从x=a到x=b的区域的面积。也就是说，我们把f(x)的曲线绘制在xy平面上，然后找到由该曲线，x轴，x=a和x=b所围成区域的面积即是积分值。
 
-![integrate](http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme-Z-G-1.png)
+![integrate](images/t-y-scheme-appendix-c-integration.png)
 
 根据辛普森法则，我们把积分区间[a,b]划分为n个相等的区间，n是一个偶数（n越大，近似的效果就越好）。区间边界在x轴上形成了n+1个点，即：$x_0, x_1, \ldots, x_i, x_{i+1}, \ldots, x_n$ ，其中 $x_0=a, x_n=b$ 。每个小区间的长度是h=(b-a)/n，这样 $x_i=a+i*h$ ，我们然后计算f(x)在区间端点的纵坐标值，即，其中 $y_i=f(x_i)=f(x+i*h)$。辛普森法则用下列算式模拟f(x)在a到b之间的定积分：
 
